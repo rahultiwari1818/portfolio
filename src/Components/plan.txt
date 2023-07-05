@@ -1,0 +1,3 @@
+achievement page design:
+
+---> a div with 1 pic and minor desc about that
