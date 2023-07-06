@@ -8,7 +8,7 @@ import Card from './Card'
 
 export default function Achievements() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white p-5'>
         <h2 className='px-5 font-semibold text-3xl text-blue-500 underline '>Achievements</h2>
         <div className="flex justify-center items-center">
 

@@ -12,7 +12,7 @@ export default function Sidebar({show,width}) {
 		show &&     <aside className={`h-screen absolute left-0 bg-black p-10 ${width?"w-[80vw]":" w-[20vw]"} z-50`}>
         <div className=' flex justify-center items-center'>
 
-      <div className='lg:h-[150px] md:h-[100px] md:w-[100px] outline-[8px] outline outline-blue-500 lg:w-[150px] overflow-hidden rounded-full'>
+      <div className='lg:h-[150px] h-[100px] w-[100px] outline-[8px] outline outline-blue-500 lg:w-[150px] overflow-hidden rounded-full'>
             <img src={profilePic} alt="" srcset="" className='rounded-full '/>
       </div>
         </div>

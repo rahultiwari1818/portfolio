@@ -2,7 +2,7 @@ import React from 'react'
 import profileImg from "../Assests/Images/IMG_3357.jpg";
 export default function AboutMe() {
   return (
-    <div>
+    <div className='p-5 outline outline-blue-400'>
         <h2 className='px-5 font-semibold text-3xl text-blue-500 underline'>About</h2>
         <div className=' block lg:flex justify-center gap-32 items-center p-10'>
             <div className='p-3 lg:w-[30vw] '>
