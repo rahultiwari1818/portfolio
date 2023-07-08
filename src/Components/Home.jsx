@@ -21,23 +21,23 @@ function useScrollEvent(callback) {
 export default function Home() {
 
   const [showSidebar, setShowSidebar] = useState(true);
-  const [showButtons,setShowButtons] = useState(false)
+  const [showButtons, setShowButtons] = useState(false)
   const handleResize = () => {
     let width = window.innerWidth;
-    if(width < 1000){
+    if (width < 1000) {
       setShowButtons(true);
       setShowSidebar(false)
     }
-    else{
+    else {
       setShowSidebar(true);
       setShowButtons(false);
     }
     console.log(width);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     handleResize();
-  },[])
+  }, [])
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -55,7 +55,7 @@ export default function Home() {
     setShowSidebar(false);
   }
 
-  
+
 
   const handleScroll = () => {
     console.log('Scrolled!');
@@ -69,12 +69,12 @@ export default function Home() {
       <Sidebar show={showSidebar} width={showButtons} />
       {
         showButtons && <>
-              {
-        !showSidebar && <Bar onClick={handleBarClick} className='bg-blue-500 rounded-full p-2 h-[40px] w-[40px] absolute right-[10px] top-[10px] cursor-pointer' />
-      }
-      {
-        showSidebar && <Cancel onClick={handleHideClick} className='bg-blue-500 rounded-full p-2 h-[40px] w-[40px] absolute  right-[10px] top-[10px] cursor-pointer' />
-      }
+          {
+            !showSidebar && <Bar onClick={handleBarClick} className='bg-blue-400 rounded-full p-2 h-[40px] w-[40px] absolute right-[10px] top-[10px] cursor-pointer' />
+          }
+          {
+            showSidebar && <Cancel onClick={handleHideClick} className='bg-blue-400 rounded-full p-2 h-[40px] w-[40px] absolute  right-[10px] top-[10px] cursor-pointer' />
+          }
         </>
       }
       <MainPage width={showButtons} />
