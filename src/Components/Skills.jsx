@@ -7,8 +7,9 @@ export default function Skills() {
         <div className='p-5 outline outline-blue-400'>
             <h2 className='px-5 font-semibold text-3xl text-blue-500 underline'>Skills</h2>
             <p className='p-4 font-semibold text-base'>
-                Comfortable with React -js when it comes to web development but also familiar and able to code in Jquery and Vanilla Javascript.
+                Comfortable with React - js when it comes to web development but also familiar and able to code in Jquery and Vanilla Javascript.
                 <br />
+                Familiar with CSS frameworks like Bootstrap and Tailwind.<br/>
                 able to implement complex functionalities as i'm having deep interest in problem solving.
                 <br />
                 Also Familiar with Version Control System like Git.
