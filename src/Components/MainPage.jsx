@@ -3,14 +3,16 @@ import Achievements from './Achievements'
 import AboutMe from './AboutMe'
 import Skills from './Skills'
 
-export default function MainPage({width}) {
+const  MainPage = React.forwardRef(( {width , skillRef,aboutRef,achRef})=> {
   return (
 	<>
 	<div className={`${width?"w-full":"absolute left-[20vw]"} p-1 h-screen overflow-scroll`}>
-		<AboutMe/>
-		<Skills/>
-		<Achievements/>
+		<AboutMe aboutRef={aboutRef}/>
+		<Skills skillRef={skillRef}/>
+		<Achievements achRef={achRef}/>
 	</div>
 	</>
   )
-}
+})
+
+export default MainPage;

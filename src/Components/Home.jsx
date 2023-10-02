@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Sidebar from './Sidebar'
 import { ReactComponent as Bar } from "../Assests/Icons/Bar.svg"
 import { ReactComponent as Cancel } from "../Assests/Icons/BarCancel.svg"
 import MainPage from './MainPage';
 
-function useScrollEvent(callback) {
-  useEffect(() => {
-    const handleScroll = () => {
-      callback();
-    };
+// function useScrollEvent(callback) {
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       callback();
+//     };
 
-    window.addEventListener('scroll', handleScroll);
+//     window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [callback]);
-}
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, [callback]);
+// }
 
 export default function Home() {
 
@@ -32,7 +32,7 @@ export default function Home() {
       setShowSidebar(true);
       setShowButtons(false);
     }
-    console.log(width);
+    // console.log(width);
   };
 
   useEffect(() => {
@@ -56,17 +56,16 @@ export default function Home() {
   }
 
 
+  const skillRef = useRef(null);
+  const aboutRef = useRef(null);
+  const achRef = useRef(null);
 
-  const handleScroll = () => {
-    console.log('Scrolled!');
-    // Your scroll logic here
-  };
 
-  useScrollEvent(handleScroll);
+
 
   return (
     <div className='flex'>
-      <Sidebar show={showSidebar} width={showButtons} />
+      <Sidebar show={showSidebar} width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef}/>
       {
         showButtons && <>
           {
@@ -77,7 +76,7 @@ export default function Home() {
           }
         </>
       }
-      <MainPage width={showButtons} />
+      <MainPage width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef}/>
 
     </div>
   )

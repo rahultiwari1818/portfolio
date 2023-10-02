@@ -5,7 +5,20 @@ import { ReactComponent as Linkedin } from "../Assests/Icons/linkedin.svg"
 import { ReactComponent as Twitter } from "../Assests/Icons/twitter.svg"
 import { ReactComponent as About } from "../Assests/Icons/user-solid.svg"
 
-export default function Sidebar({ show, width }) {
+const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef }) =>{
+
+	const navigateTo = (section) =>{
+		if(section === "skills"){
+			skillRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+		else if(section === "about"){
+			aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+		else if(section === "achievement"){
+			achRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
 	return (
 		<>
 			{
@@ -13,7 +26,7 @@ export default function Sidebar({ show, width }) {
 					<div className=' flex justify-center items-center'>
 
 						<div className='lg:h-[150px] h-[100px] w-[100px] outline-[8px] outline outline-blue-500 lg:w-[150px] overflow-hidden rounded-full'>
-							<img src={profilePic} alt="" srcset="" className='rounded-full ' />
+							<img src={profilePic} alt="" srcSet="" className='rounded-full ' />
 						</div>
 					</div>
 					<div className='mt-5'>
@@ -38,14 +51,16 @@ export default function Sidebar({ show, width }) {
 					</div>
 					<div className='mt-10 break-words break-all'>
 						<div className='w-full'>
-							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("about")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> About Me</p>
 							</button>
-						</div>	<div className='w-full'>
-							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
+						</div>
+							<div className='w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("skills")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Skills</p>
 							</button>
-						</div>	<div className='w-full'>
+						</div>
+							<div className='w-full'>
 							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Academic</p>
 							</button>
@@ -56,7 +71,7 @@ export default function Sidebar({ show, width }) {
 							</button>
 						</div>
 						<div className='w-full'>
-							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("achievement")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Achievements </p>
 							</button>
 						</div>
@@ -66,4 +81,6 @@ export default function Sidebar({ show, width }) {
 
 		</>
 	)
-}
+});
+
+export default Sidebar;

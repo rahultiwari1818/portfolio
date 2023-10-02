@@ -6,9 +6,9 @@ import impetus from "../Assests/Images/impetus2k23.jpg"
 import pixel from "../Assests/Images/pixel2k23.jpg"
 import Card from './Card'
 
-export default function Achievements() {
+const Achievements = React.forwardRef(({achRef})=> {
   return (
-    <div className='bg-white outline outline-blue-400 p-5'>
+    <div className='bg-white outline outline-blue-400 p-5' ref={achRef}>
         <h2 className='px-5 font-semibold text-3xl text-blue-500 underline '>Achievements</h2>
         <div className="flex justify-center items-center">
 
@@ -23,4 +23,6 @@ export default function Achievements() {
         </div>
     </div>
   )
-}
+});
+
+export default Achievements;

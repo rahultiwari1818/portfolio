@@ -1,9 +1,9 @@
 import React from 'react'
 import profileImg from "../Assests/Images/IMG_3357.jpg";
 import "../App.css";
-export default function AboutMe() {
+const AboutMe = React.forwardRef(({aboutRef})=> {
   return (
-    <div className='p-5 outline outline-blue-400 background'>
+    <div className='p-5 outline outline-blue-400 background' ref={aboutRef}>
       <h2 className='px-5 font-semibold text-3xl text-blue-500 underline'>About</h2>
       <div className=' block lg:flex justify-center gap-32 items-center p-10 lg:h-[90vh]'>
         <img src={profileImg} alt="" className='h-[300px] w-[200px] rounded-lg p-1 outline outline-blue-400' />
@@ -18,4 +18,6 @@ export default function AboutMe() {
       </div>
     </div>
   )
-}
+});
+
+export default AboutMe;
