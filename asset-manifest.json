@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfoloi/static/css/main.f4eaa9c2.css",
-    "main.js": "/portfoloi/static/js/main.47ab62a7.js",
+    "main.js": "/portfoloi/static/js/main.8b576e91.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfoloi/static/js/787.1ed0c42c.chunk.js",
     "static/media/impetus2k23.jpg": "/portfoloi/static/media/impetus2k23.77611c2b2bc6e4c5285a.jpg",
     "static/media/IMG_3357.jpg": "/portfoloi/static/media/IMG_3357.854e38e61e1fa866e87e.jpg",
     "static/media/mindIT2k23.jpg": "/portfoloi/static/media/mindIT2k23.ba9037d999f9355a5b79.jpg",
     "static/media/pixel2k23.jpg": "/portfoloi/static/media/pixel2k23.28f73e8914a35152154c.jpg",
+    "static/media/CodechefLogo.svg": "/portfoloi/static/media/CodechefLogo.49dbba7b1e219d95db99795ff3eb5920.svg",
     "static/media/dynafest2k23.jpg": "/portfoloi/static/media/dynafest2k23.70ccd23123ddb0d6d44e.jpg",
     "static/media/Trophy.jpeg": "/portfoloi/static/media/Trophy.a0b91c21d33e05010afb.jpeg",
     "static/media/background.avif": "/portfoloi/static/media/background.589e88f3b5a8ae989dff.avif",
@@ -18,11 +19,11 @@
     "static/media/Bar.svg": "/portfoloi/static/media/Bar.dd92aed316c5967acbf1f7094cd87de4.svg",
     "static/media/user-solid.svg": "/portfoloi/static/media/user-solid.25c7a2c4478e96f8be7eddc9f7c01f5b.svg",
     "main.f4eaa9c2.css.map": "/portfoloi/static/css/main.f4eaa9c2.css.map",
-    "main.47ab62a7.js.map": "/portfoloi/static/js/main.47ab62a7.js.map",
+    "main.8b576e91.js.map": "/portfoloi/static/js/main.8b576e91.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfoloi/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4eaa9c2.css",
-    "static/js/main.47ab62a7.js"
+    "static/js/main.8b576e91.js"
   ]
 }
