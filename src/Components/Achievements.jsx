@@ -4,6 +4,7 @@ import dynafest from "../Assests/Images/dynafest2k23.jpg"
 import mindit from "../Assests/Images/mindIT2k23.jpg"
 import impetus from "../Assests/Images/impetus2k23.jpg"
 import pixel from "../Assests/Images/pixel2k23.jpg"
+import CodeChefLogo from "../Assests/Icons/CodechefLogo.svg"
 import Card from './Card'
 
 const Achievements = React.forwardRef(({achRef})=> {
@@ -13,6 +14,7 @@ const Achievements = React.forwardRef(({achRef})=> {
         <div className="flex justify-center items-center">
 
         <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 sm:block  '>
+            <Card image={CodeChefLogo} description="Secured Global Rank 162 in CodeChef's Starters 99 Contest."/>
             <Card image={trophy} description="Award for Academic Excellence during Semester 2."/>
             <Card image={trophy} description="Award for Academic Excellence during Semester 3."/>
             <Card image={dynafest} description='Winner of "Battle of C" Competition (a coding contest in C language) at an IT Event "Dyna Fest 2k23".'/>
