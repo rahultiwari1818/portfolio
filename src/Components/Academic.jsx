@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Academic() {
-  return (
-    <div>
-      
-    </div>
+const Academic = React.forwardRef(({aceRef})=>{
+  return(
+    <section className='p-5 outline outline-blue-400' ref={aceRef}>
+
+    </section>
   )
-}
+});
+
+export default Academic;

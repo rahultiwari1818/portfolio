@@ -59,13 +59,14 @@ export default function Home() {
   const skillRef = useRef(null);
   const aboutRef = useRef(null);
   const achRef = useRef(null);
-
+  const projectRef = useRef(null);
+  const aceRef = useRef(null);
 
 
 
   return (
-    <div className='flex'>
-      <Sidebar show={showSidebar} width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef}/>
+    <section className='flex'>
+      <Sidebar show={showSidebar} width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef} projectRef={projectRef}  aceRef={aceRef}/>
       {
         showButtons && <>
           {
@@ -76,8 +77,8 @@ export default function Home() {
           }
         </>
       }
-      <MainPage width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef}/>
+      <MainPage width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef} projectRef={projectRef} aceRef={aceRef}/>
 
-    </div>
+    </section>
   )
 }

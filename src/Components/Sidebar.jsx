@@ -5,7 +5,7 @@ import { ReactComponent as Linkedin } from "../Assests/Icons/linkedin.svg"
 import { ReactComponent as Twitter } from "../Assests/Icons/twitter.svg"
 import { ReactComponent as About } from "../Assests/Icons/user-solid.svg"
 
-const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef }) =>{
+const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projectRef,aceRef }) =>{
 
 	const navigateTo = (section) =>{
 		if(section === "skills"){
@@ -17,20 +17,26 @@ const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef }) =>{
 		else if(section === "achievement"){
 			achRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
+		else if(section === "project"){
+			projectRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+		else if(section === "academic"){
+			aceRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
 	}
 
 	return (
 		<>
 			{
 				show && <aside className={`h-screen absolute left-0 bg-black p-10 ${width ? "w-[80vw]" : " w-[20vw]"} z-50`}>
-					<div className=' flex justify-center items-center'>
+					<section className=' flex justify-center items-center'>
 
-						<div className='lg:h-[150px] h-[100px] w-[100px] outline-[8px] outline outline-blue-500 lg:w-[150px] overflow-hidden rounded-full'>
+						<section className='lg:h-[150px] h-[100px] w-[100px] outline-[8px] outline outline-blue-500 lg:w-[150px] overflow-hidden rounded-full'>
 							<img src={profilePic} alt="" srcSet="" className='rounded-full ' />
-						</div>
-					</div>
-					<div className='mt-5'>
-						<div className='flex justify-between items-center'>
+						</section>
+					</section>
+					<section className='mt-5'>
+						<section className='flex justify-between items-center'>
 							<button onClick={() => {
 								window.open("https://github.com/rahultiwari1818", "_blank");
 							}}>
@@ -47,35 +53,35 @@ const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef }) =>{
 
 								<Twitter className='p-1 outline bg-white h-[32px] w-[32px] lg:h-[37px] lg:w-[37px] rounded-full   ' />
 							</button>
-						</div>
-					</div>
-					<div className='mt-10 break-words break-all'>
-						<div className='w-full'>
+						</section>
+					</section>
+					<section className='mt-10 break-words break-all'>
+						<section className='w-full'>
 							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("about")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> About Me</p>
 							</button>
-						</div>
-							<div className='w-full'>
+						</section>
+							<section className='w-full'>
 							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("skills")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Skills</p>
 							</button>
-						</div>
-							<div className='w-full'>
-							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
+						</section>
+							<section className='w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("academic")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Academic</p>
 							</button>
-						</div>
-						<div className='w-full'>
-							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full'>
+						</section>
+						<section className='w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("project")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p>Projects</p>
 							</button>
-						</div>
-						<div className='w-full'>
+						</section>
+						<section className='w-full'>
 							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("achievement")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Achievements </p>
 							</button>
-						</div>
-					</div>
+						</section>
+					</section>
 				</aside>
 			}
 
