@@ -44,7 +44,7 @@ const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projec
 								<Github className='outline-white outline bg-white h-[30px] w-[30px] lg:h-[35px] lg:w-[35px] rounded-full' />
 							</button>
 							<button onClick={() => {
-								window.open("https://www.linkedin.com/in/rahul-tiwari-a1b45a238/", "_blank");
+								window.open("https://www.linkedin.com/in/rahultiwari1218/", "_blank");
 							}}>
 
 								<Linkedin className='p-[7px] outline bg-white h-[30px] w-[30px] lg:h-[35px] lg:w-[35px] rounded-xl   ' />

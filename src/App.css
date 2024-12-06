@@ -3,3 +3,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+* {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}

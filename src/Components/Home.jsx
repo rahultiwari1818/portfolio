@@ -65,7 +65,7 @@ export default function Home() {
 
 
   return (
-    <section className='flex'>
+    <section className='flex hide'>
       <Sidebar show={showSidebar} width={showButtons} skillRef={skillRef} aboutRef={aboutRef} achRef={achRef} projectRef={projectRef}  aceRef={aceRef}/>
       {
         showButtons && <>

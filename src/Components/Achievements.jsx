@@ -11,7 +11,7 @@ const Achievements = React.forwardRef(({achRef})=> {
   return (
     <section className='bg-white outline outline-blue-400 p-5' ref={achRef}>
         <h2 className='px-5 font-semibold text-3xl text-blue-500 underline '>Achievements</h2>
-        <section className="flex justify-center items-center">
+        <section className="">
 
           <section className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 sm:block  '>
               <Card image={CodeChefLogo} description="Secured Global Rank 162 in CodeChef's Starters 99 Contest."/>
