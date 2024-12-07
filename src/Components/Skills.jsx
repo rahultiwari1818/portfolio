@@ -19,7 +19,7 @@ const  Skills = React.forwardRef(({skillRef})=> {
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>CSS</p>
-                <ProgressBar completed={70} bgColor='#45b6fe' animateOnRender height='16px' />
+                <ProgressBar completed={85} bgColor='#45b6fe' animateOnRender height='16px' />
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>Javascript</p>
@@ -27,7 +27,7 @@ const  Skills = React.forwardRef(({skillRef})=> {
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>React-Js</p>
-                <ProgressBar completed={80} bgColor='#45b6fe' animateOnRender height='16px' />
+                <ProgressBar completed={90} bgColor='#45b6fe' animateOnRender height='16px' />
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>Python</p>
@@ -47,11 +47,15 @@ const  Skills = React.forwardRef(({skillRef})=> {
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>Core PHP</p>
-                <ProgressBar completed={70} bgColor='#45b6fe' animateOnRender height='16px' />
+                <ProgressBar completed={80} bgColor='#45b6fe' animateOnRender height='16px' />
             </section>
             <section className='p-2'>
                 <p className='p-2 text-base font-semibold'>Node Js</p>
-                <ProgressBar completed={60} bgColor='#45b6fe' animateOnRender height='16px' />
+                <ProgressBar completed={90} bgColor='#45b6fe' animateOnRender height='16px' />
+            </section>
+            <section className='p-2'>
+                <p className='p-2 text-base font-semibold'>Mongo Db :</p>
+                <ProgressBar completed={80} bgColor='#45b6fe' animateOnRender height='16px' />
             </section>
         </section>
     )
