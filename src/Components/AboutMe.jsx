@@ -19,7 +19,7 @@ const AboutMe = React.forwardRef(({ aboutRef }) => {
         </section>
       </section>
       <section className='outline outline-white rounded-md p-3 '>
-        <h2 className='px-5 font-semibold text-3xl text-white underline'>Links of my Coding Profile</h2>
+        <h2 className='px-5 font-semibold text-3xl text-white underline'>Links of my Coding Profiles</h2>
 
         <section className='px-5 py-5 block gap-10 md:flex md:justify-center md:items-center'>
           <p className='py-3'>

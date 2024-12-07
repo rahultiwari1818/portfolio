@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scripts": "5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -26,8 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install-and-build" :" npm install && npm run build",
-    "start-client" : "npm install -g serve && cd build && serve -s"
+    "install-and-build": " npm install && npm run build",
+    "start-client": "npm install -g serve && cd build && serve -s"
   },
   "eslintConfig": {
     "extends": [

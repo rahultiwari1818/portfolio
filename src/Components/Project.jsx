@@ -3,6 +3,7 @@ import ProjectDetails from './ProjectDetails';
 import qpgImage from "../Assests/Images/QPGImage.png"
 import CEMS from "../Assests/Images/CEMS.png"
 import Notekeeper from "../Assests/Images/NoteKeeper.png"
+import NewsApp from "../Assests/Images/Newsapp.png"
 
 const Project = React.forwardRef(({ projectRef }) => {
     return (
@@ -13,6 +14,7 @@ const Project = React.forwardRef(({ projectRef }) => {
                     <ProjectDetails imgSrc={CEMS} projectName={"College Event Management System"} techStack={"React-JS, Express , MongoDB , Node-JS , Redux , Redis"} projectLink={"https://github.com/rahultiwari1818/CollegeEventManagementSystem"} />
                     <ProjectDetails imgSrc={qpgImage} projectName={"Question Paper Generator System"} techStack={" HTML,Tailwind-Css , J-Query , PHP , MYSQL"} projectLink={"https://github.com/rahultiwari1818/Question-paper-generator-system"} />
                     <ProjectDetails imgSrc={Notekeeper} projectName={"Note keeper"} techStack={" React-JS, Express , MongoDB , Node-JS "} projectLink={"https://github.com/rahultiwari1818/NoteKeeperApp"} />
+                    <ProjectDetails imgSrc={NewsApp} projectName={"News App"} techStack={" React-JS, TailWind CSS "} projectLink={"https://github.com/rahultiwari1818/The-News-App"} />
                 </section>
             </section>
         </section>

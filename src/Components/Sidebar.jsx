@@ -5,7 +5,7 @@ import { ReactComponent as Linkedin } from "../Assests/Icons/linkedin.svg"
 import { ReactComponent as Twitter } from "../Assests/Icons/twitter.svg"
 import { ReactComponent as About } from "../Assests/Icons/user-solid.svg"
 
-const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projectRef,aceRef }) =>{
+const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projectRef,aceRef ,expRef}) =>{
 
 	const navigateTo = (section) =>{
 		if(section === "skills"){
@@ -22,6 +22,9 @@ const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projec
 		}
 		else if(section === "academic"){
 			aceRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+		else if(section === "experience"){
+			expRef.current.scrollIntoView({behavior:'smooth'});
 		}
 	}
 
@@ -66,7 +69,11 @@ const  Sidebar = React.forwardRef(({ show, width,skillRef,aboutRef,achRef,projec
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Skills</p>
 							</button>
 						</section>
-							<section className='w-full'>
+						<section className='w-full'>
+							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("experience")}>
+								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Experience</p>
+							</button>
+						</section><section className='w-full'>
 							<button className='flex justify-start gap-[2vw] items-center text-white   p-5 w-full' onClick={()=>navigateTo("academic")}>
 								<About className='outline-white outline bg-white h-[20px] w-[20px] p-[2px] rounded-full' /><p> Academic</p>
 							</button>
