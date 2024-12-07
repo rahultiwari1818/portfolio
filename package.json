@@ -26,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prod": "npm run build && serve -s build"
+    "install-and-build" :" npm install && npm run build",
+    "start-client" : "npm install -g serve && cd build && serve -s"
   },
   "eslintConfig": {
     "extends": [
