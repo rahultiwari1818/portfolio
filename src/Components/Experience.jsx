@@ -9,19 +9,16 @@ const data = [
         title: "Backend Intern",
         subtitle: "Tech Stack: Node.js, MongoDB",
         logo: MegascaleLogo,
-        desc: `• Led the development as part of a team of 4 backend developers using Node.js; managed client interactions and
-presentations, ensuring requirements were met.
-• Developed APIs that reduced paper usage by 99%, created an online helpdesk, integrated QR code-based
-attendance scanning, and enabled online submission of suggestions for resolutions.`
+        desc: [`• Led the development as part of a team of 4 backend developers using Node.js; managed client interactions and
+presentations, ensuring requirements were met.`,`• Developed APIs that reduced paper usage by 99%, created an online helpdesk, integrated QR code-based attendance scanning, and enabled online submission of suggestions for resolutions.`]
     },
     {
         date: "April 2023 - June 2023",
         logo: Dot3Logo,
         title: "Frontend Intern",
         subtitle: "Tech Stack: React JS, JavaScript",
-        desc: `• Worked on Admin panel of Unlock fit using ReactJS.   
-• Successfully integrated APIs using Axios, enabling seamless communication between the front-end and back-end
-systems.`
+        desc: ["• Worked on Admin panel of Unlock fit using ReactJS.",`• Successfully integrated APIs using Axios, enabling seamless communication between the front-end and back-end
+systems.`]
     }
 
 ];

@@ -8,14 +8,14 @@ const data = [
   {
     title :"Masters of Science - Information Technology",
     subtitle:"Dhirubhai Ambani Institute of Information and Communication Technology",
-    desc :"Gandhinagar , Gujarat",
+    desc :["Gandhinagar , Gujarat"],
     logo : DaiictLogo,
     date :"July 2024 - Present"
   },
   {
     title :"Bachelors of Computer Application",
     subtitle:"Veer Narmad South Gujarat University",    
-    desc :"Surat , Gujarat",
+    desc :["Surat , Gujarat"],
     logo : VnsguLogo,
     date :"2021 - 2024"
   },
